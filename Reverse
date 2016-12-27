@@ -1,0 +1,17 @@
+#include<iostream.h>
+#include<conio.h>
+void main()
+{
+	int num,r,rev=0;
+	clrscr();
+	cout<<"enter the number";
+	cin>>num;
+	while(num!=0)
+	{
+		r=num%10;
+		rev=(rev*10)+r;
+		num=num/10;
+	}
+	cout<<"reverse of the number is "<<rev;
+	getch();
+}
