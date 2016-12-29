@@ -1,0 +1,36 @@
+#include<iostream.h>
+#include<conio.h>
+void main()
+{
+	int num,temp,t,r,min;
+	int i=0,ans=0,s=0;
+	clrscr();
+	cout<<"\nenter the number";
+	cin>>num;
+	temp=num;
+	t=num;
+	while(temp!=0)
+	{
+		temp=temp/10;
+		i++;
+	}
+	for(int j=0;j<i;j++)
+	{
+		min=10;
+		num=t;
+		while(num!=0)
+		{
+			r=num%10;
+			num=num/10;
+			if(r<min & r>s)
+			{
+				min=r;
+			}
+
+		}
+		s=min;
+		ans=(ans*10)+min;
+	}
+	cout<<"\nthe answer is "<<ans;
+	getch();
+	}
