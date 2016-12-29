@@ -1,0 +1,25 @@
+#include<iostream.h>
+#include<conio.h>
+void main()
+{
+	int num,org=0,r,temp;
+	clrscr();
+	cout<<"\nenter the number";
+	cin>>num;
+	temp=num;
+	while(num!=0)
+	{
+		r=num%10;
+		num=num/10;
+		org=(org*10)+r;
+	}
+	if(org==temp)
+	{
+		cout<<"\nYES";
+	}
+	else
+	{
+		cout<<"\nNO";
+	}
+	getch();
+}
