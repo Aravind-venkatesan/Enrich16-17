@@ -8,13 +8,13 @@ int main()
 	ans=num+1;
 	while(f!=2)
 	{
-	    for(i=2;i<=ans;i++)
-	    {
-	        if(ans%i==0)
-	        {
-	            break;
-	        }
-	    }
+		for(i=2;i<=ans;i++)
+		{
+			if(ans%i==0)
+			{
+				break;
+			}
+		}
 		if(i==ans)
 		{
 			cout<<ans;
