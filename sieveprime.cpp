@@ -3,7 +3,7 @@
 using namespace std;
 int main()
 {
-    int t,ind,num,i,j;
+	int t,ind,num,i,j;
 	cin>>num;
 	ind=num+20;
 	t=sqrt(ind);
